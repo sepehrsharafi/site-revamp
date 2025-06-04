@@ -49,19 +49,19 @@ export default function Header() {
                 d="M8 8H36"
                 stroke="black"
                 strokeWidth="3.25"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
               <path
                 d="M8 18H36"
                 stroke="black"
                 strokeWidth="3.25"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
               <path
                 d="M8 28H36"
                 stroke="black"
                 strokeWidth="3.25"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
             </svg>
             <svg
