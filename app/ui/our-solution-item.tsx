@@ -43,7 +43,7 @@ export default function OurSolutionItem({
         width={100}
         height={100}
         alt="image"
-        className="absolute -bottom-6 right-0 w-15 xl:w-[35px] 2xl:w-22"
+        className="absolute -bottom-4 xl:-bottom-6 right-0 w-15 xl:w-[35px] 2xl:w-22"
       />
     </article>
   );

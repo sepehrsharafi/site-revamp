@@ -98,7 +98,7 @@ export default function Home() {
               percentage={45}
             />
           </div>
-          <div className="flex flex-col gap-5 w-[55%] my-auto p-5.5 xl:p-7 2xl:p-9 border-[1.5px] border-[#EBEBEB] rounded-[28px]">
+          <div className="flex flex-col gap-5 xl:w-[55%] my-auto p-5.5 xl:p-7 2xl:p-9 border-[1.5px] border-[#EBEBEB] rounded-[28px]">
             <div className="flex flex-col gap-2">
               <h3 className="text-[#221D4F] text-3xl xl:text-[28px] 2xl:text-3xl font-semibold xl:font-[650]">
                 Our Solution

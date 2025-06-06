@@ -11,11 +11,11 @@ export default function HeroSection() {
         height={2000}
         alt="hero section background image"
       />
-      <div className="flex flex-col my-auto mx-6">
-        <h1 className="font-[syne] text-indigo-950 text-[56px] xl:text-[90px] 2xl:text-[110px] font-[730] tracking-[-4%] leading-[100%]">
+      <div className="flex flex-col gap-5 my-auto mx-4">
+        <h1 className="font-[syne] text-indigo-950 text-[46px] xl:text-[90px] 2xl:text-[110px] font-[730] tracking-[-4%] leading-[100%]">
           Redefining Digital <br className="hidden xl:block" /> Presence
         </h1>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-3">
           <h2 className="text-indigo-950 text-xl xl:text-3xl 2xl:text-3xl font-semibold">
             revamping underperforming websites for small businesses.
           </h2>
