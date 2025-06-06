@@ -1,4 +1,4 @@
-export default function Header() {
+export default function NavBar() {
   return (
     <header className="relative">
       <div className="block xl:hidden w-full p-4 left-0 top-0 absolute justify-between items-center">
@@ -134,7 +134,7 @@ export default function Header() {
             <li className="justify-start text-black">Plans</li>
             <li className="justify-start text-black">Get in Touch</li>
           </ul>
-          <div className="px-5 py-4 bg-indigo-600 rounded-[50px]">
+          <div className="px-5 py-4 bg-gradient-to-r from-indigo-700 to-indigo-400 rounded-[50px]">
             <div className="justify-start text-white text-lg 2xl:text-xl font-[550] leading-3.5 2xl:leading-5">
               BOOK A FREE CONSULTATION
             </div>

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { urbanist, syne } from "./fonts";
 import "./globals.css";
-import Header from "./ui/header";
+import Header from "./ui/navbar";
+import NavBar from "./ui/navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${urbanist.variable} antialiased`}>
-        <Header />
+        <NavBar />
         {children}
       </body>
     </html>
