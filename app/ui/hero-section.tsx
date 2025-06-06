@@ -3,7 +3,7 @@ import Button from "./button";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col gap-7 h-screen text-center">
+    <section className="relative flex flex-col gap-7 h-svh text-center">
       <Image
         src={"/herosection-bg.png"}
         className="absolute top-0 h-screen w-full object-cover object-[65%_75%] -z-20"
