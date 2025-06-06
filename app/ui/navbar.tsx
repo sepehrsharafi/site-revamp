@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <header className="relative">
+    <header className="sticky top-0 z-50">
       <div className="block xl:hidden w-full p-4 left-0 top-0 absolute justify-between items-center">
         <div className="flex-1 px-6 py-3.5 bg-white rounded-[66px] outline-[1.50px] outline-offset-[-0.75px] outline-neutral-300 flex justify-between items-center">
           <div className="flex justify-start items-center gap-3">
