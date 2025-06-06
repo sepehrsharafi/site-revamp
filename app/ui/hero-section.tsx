@@ -6,9 +6,10 @@ export default function HeroSection() {
     <section className="relative flex flex-col gap-7 h-svh text-center">
       <Image
         src={"/herosection-bg.png"}
-        className="absolute top-0 h-screen w-full object-cover object-[65%_75%] -z-20"
+        className="absolute top-0 h-svh w-full object-cover object-[65%_75%] -z-20"
         width={2000}
         height={2000}
+        priority={true}
         alt="hero section background image"
       />
       <div className="flex flex-col gap-5 my-auto mx-4">
