@@ -1,8 +1,8 @@
-import Image from "next/image";
 import HeroSection from "./ui/hero-section";
 import StatItem from "./ui/stat-item";
 import OurSolutionItem from "./ui/our-solution-item";
 import OurSolutionSubItem from "./ui/our-solution-subItem";
+import WhyChooseUsItem from "./ui/why-choose-us-item";
 
 export default function Home() {
   return (
@@ -108,7 +108,7 @@ export default function Home() {
                 integrates your systems, and optimizes your resources.
               </p>
             </div>
-            <div className="xl:grid grid-cols-2 gap-4">
+            <div className="grid xl:grid-cols-2 gap-4">
               <OurSolutionSubItem
                 title="“Site doesn’t work on phones”"
                 description="We design mobile-first so your customers find you anywhere."
@@ -127,6 +127,51 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="container mx-auto p-4 my-20">
+        <div className="text-center flex flex-col gap-8">
+          <span className="text-indigo-950 font-[650] text-3xl 2xl:text-4xl">
+            Why Choose Us
+          </span>
+          <div className="flex flex-col gap-3.5 text-black text-xl xl:text-2xl 2xl:text-3xl  2xl:leading-10 font-medium">
+            <p>
+              We Know What Small Businesses Need—Because We Build for You, Not
+              for Ourselves.
+            </p>
+          </div>
+        </div>
+        <div className="grid xl:grid-cols-3 gap-7">
+          <WhyChooseUsItem
+            title="Straightforward Consulting"
+            description="No tech talk, just honest guidance that works"
+            icon="/why-choose-us-1.png"
+          />
+          <WhyChooseUsItem
+            title="Mobile Optimization"
+            description="We make sure your site works perfectly on phones"
+            icon="/why-choose-us-2.png"
+          />
+          <WhyChooseUsItem
+            title="Blazing Fast Performance"
+            description="Customers don’t wait. We make sure your site doesn’t either"
+            icon="/why-choose-us-3.png"
+          />
+          <WhyChooseUsItem
+            title="Clear Calls-to-Action"
+            description="Turn traffic into calls, appointments, and sales"
+            icon="/why-choose-us-4.png"
+          />
+          <WhyChooseUsItem
+            title="Custom Design for You"
+            description="We don’t use templates unless you ask us to"
+            icon="/why-choose-us-5.png"
+          />
+          <WhyChooseUsItem
+            title="Ongoing Support"
+            description="We’re here if you need updates, fixes, or new features later"
+            icon="/why-choose-us-6.png"
+          />
         </div>
       </section>
     </main>
