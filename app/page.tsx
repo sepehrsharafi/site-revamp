@@ -187,7 +187,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="grid xl:grid-cols-3 gap-4 xl:gap-7 2xl:gap-10">
+        <div className="grid xl:grid-cols-3 gap-6 xl:gap-7 2xl:gap-10">
           <UnleashYourPotentialItem
             title="Boost Conversions with a Modern Design"
             description="Attract more leads with a sleek, modern design. Our redesigns boost conversions by 30% with better visuals and navigation."

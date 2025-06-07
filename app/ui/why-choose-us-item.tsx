@@ -24,7 +24,7 @@ export default function WhyChooseUsItem({
       <p className="text-lg xl:text-[19px] 2xl:text-[21px] font-[450] h-full">
         {description}
       </p>
-      <div className="flex flex-row gap-3">
+      <div className="flex flex-row items-center gap-3">
         <span className="text-[17px] xl:text-[19px] font-semibold text-[#2563EB]">
           Learn More
         </span>
@@ -58,7 +58,7 @@ export default function WhyChooseUsItem({
         width={100}
         height={100}
         alt="image"
-        className="w-[70px] h-[70px] xl:w-22.5 xl:h-22.5 absolute -right-6 xl:-right-4 -bottom-8 xl:-bottom-7 2xl:-bottom-8 opacity-15 rotate-45"
+        className="w-[70px] h-[70px] xl:w-22.5 xl:h-22.5 absolute -right-4 -bottom-7 2xl:-bottom-8 opacity-15 rotate-45"
       />
       {/* <svg
         width="99"
