@@ -3,6 +3,7 @@ import StatItem from "./ui/stat-item";
 import OurSolutionItem from "./ui/our-solution-item";
 import OurSolutionSubItem from "./ui/our-solution-subItem";
 import WhyChooseUsItem from "./ui/why-choose-us-item";
+import UnleashYourPotentialItem from "@/app/ui/unleash-your-potential-item";
 
 export default function Home() {
   return (
@@ -129,7 +130,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto p-4 my-20">
+      <section className="flex flex-col gap-16 container mx-auto p-4 my-20">
         <div className="text-center flex flex-col gap-8">
           <span className="text-indigo-950 font-[650] text-3xl 2xl:text-4xl">
             Why Choose Us
@@ -171,6 +172,42 @@ export default function Home() {
             title="Ongoing Support"
             description="We’re here if you need updates, fixes, or new features later"
             icon="/why-choose-us-6.png"
+          />
+        </div>
+      </section>
+      <section className="flex flex-col gap-16 container mx-auto p-4 my-20">
+        <div className="text-center flex flex-col gap-8">
+          <span className="text-indigo-950 font-[650] text-3xl 2xl:text-4xl">
+            Unleash Your Potential
+          </span>
+          <div className="flex flex-col gap-3.5 text-black text-xl xl:text-2xl 2xl:text-3xl  2xl:leading-10 font-medium">
+            <p>
+              We understand your pain points and provide innovative solutions
+              that drive real results
+            </p>
+          </div>
+        </div>
+        <div className="grid xl:grid-cols-3 gap-4 xl:gap-7 2xl:gap-10">
+          <UnleashYourPotentialItem
+            title="Boost Conversions with a Modern Design"
+            description="Attract more leads with a sleek, modern design. Our redesigns boost conversions by 30% with better visuals and navigation."
+            icon="/unleash-your-potential-1.png"
+            bgImage="/unleash-your-potential-bg-1.png"
+            bgObjectStyle="contain"
+          />
+          <UnleashYourPotentialItem
+            title="Drive More Traffic with Speed and SEO"
+            description="Get found faster with optimized speed and SEO. We cut load times and improve rankings to draw more visitors."
+            icon="/unleash-your-potential-2.png"
+            bgImage="/unleash-your-potential-bg-2.png"
+            bgObjectStyle="contain"
+          />
+          <UnleashYourPotentialItem
+            title="Engage Customers with Mobile Optimization"
+            description="Reach more customers with a mobile-friendly site. We ensure seamless performance on all devices, capturing 62% of mobile traffic."
+            icon="/unleash-your-potential-3.png"
+            bgImage="/unleash-your-potential-bg-3.png"
+            bgObjectStyle="cover"
           />
         </div>
       </section>
