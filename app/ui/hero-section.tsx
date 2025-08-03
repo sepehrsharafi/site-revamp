@@ -13,25 +13,25 @@ export default function HeroSection() {
         alt="hero section background image"
       />
       <div className="flex flex-col gap-5 my-auto mx-4">
-        <h1 className="font-[syne] text-indigo-950 text-[46px] xl:text-[90px] 2xl:text-[110px] font-[730] tracking-[-4%] leading-[100%]">
+        <h1 className="font-[syne] text-indigo-950 text-[46px] xl:text-[90px] 2xl:text-[95px] font-[730] tracking-[-4%] leading-[100%]">
           Redefining Digital <br className="hidden xl:block" /> Presence
         </h1>
         <div className="flex flex-col gap-3">
-          <h2 className="text-indigo-950 text-xl xl:text-3xl 2xl:text-3xl font-semibold">
+          <h2 className="text-indigo-950 text-xl xl:text-3xl 2xl:text-3xl font-[510]">
             revamping underperforming websites for small businesses.
           </h2>
-          <h2 className="text-black text-xl xl:text-3xl 2xl:text-3xl font-[550]">
-            “An outdated website is like a locked door—potential clients walk
-            right by.”
+          <h2 className="text-black text-xl xl:text-3xl 2xl:text-3xl font-[510] mb-4">
+            “An outdated website is like a locked door, money just walks right
+            by...”
           </h2>
           <div className="flex flex-row gap-5 items-center justify-center">
             <Button
               text="BOOK A FREE CONSULTATION"
-              buttonStyle="bg-[#5947FF] text-white font-[650] underline decoration-[2.5px] underline-offset-5 text-lg xl:text-xl rounded-full px-5 xl:px-6 py-[18px] leading-none"
+              buttonStyle="bg-[#5947FF] hover:bg-indigo-900 transform-all duration-150 text-white font-[550] underline decoration-[2px] underline-offset-5 text-lg xl:text-[22px] rounded-full px-5 xl:px-6 py-[18px] leading-none"
             />
             <Button
               text="Explore our services"
-              buttonStyle="absolute bottom-0 right-0 xl:static m-5 xl:m-0 bg-indigo-950 text-white font-[650] text-xl xl:text-xl rounded-full px-5 xl:px-6 py-[18px] leading-none"
+              buttonStyle="absolute bottom-0 right-0 hover:bg-indigo-700 transform-all duration-150 xl:static m-5 xl:m-0 bg-indigo-950 text-white font-[550] text-xl xl:text-[22px] rounded-full px-5 xl:px-6 py-[18px] leading-none"
             />
           </div>
         </div>

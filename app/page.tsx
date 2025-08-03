@@ -4,6 +4,7 @@ import OurSolutionItem from "./ui/our-solution-item";
 import OurSolutionSubItem from "./ui/our-solution-subItem";
 import WhyChooseUsItem from "./ui/why-choose-us-item";
 import UnleashYourPotentialItem from "@/app/ui/unleash-your-potential-item";
+import Testemonial from "./ui/testemonial-item";
 
 export default function Home() {
   return (
@@ -99,8 +100,8 @@ export default function Home() {
               percentage={45}
             />
           </div>
-          <div className="flex flex-col gap-5 xl:w-[55%] my-auto p-5.5 xl:p-7 2xl:p-9 border-[1.5px] border-[#EBEBEB] rounded-[28px]">
-            <div className="flex flex-col gap-2">
+          <div className="flex flex-col hover:bg-neutral-50/60 transition-all duration-150 gap-5 xl:w-[55%] my-auto p-5.5 xl:p-7 2xl:p-9 border-[1.5px] border-[#EBEBEB] rounded-[28px]">
+            <div className="flex flex-col gap-2 ">
               <h3 className="text-[#221D4F] text-3xl xl:text-[28px] 2xl:text-3xl font-semibold xl:font-[650]">
                 Our Solution
               </h3>
@@ -208,6 +209,25 @@ export default function Home() {
             icon="/unleash-your-potential-3.png"
             bgImage="/unleash-your-potential-bg-3.png"
             bgObjectStyle="cover"
+          />
+        </div>
+      </section>
+      <section className="flex flex-col gap-16 container mx-auto p-4 my-20">
+        <div className="text-center flex flex-col gap-8">
+          <span className="text-indigo-950 font-[650] text-3xl 2xl:text-4xl">
+            Don’t take our word for it, Ask our clients.
+          </span>
+        </div>
+        <div>
+          <Testemonial
+            name="Jane Cooper"
+            role="Design Lead"
+            testemonial="OHHHH Thanks god !!!! Finally
+there is someone making it for
+me to use on my projects.
+Love ya "
+            profilePicture="/image.png"
+            rating={4}
           />
         </div>
       </section>

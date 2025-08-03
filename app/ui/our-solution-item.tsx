@@ -16,7 +16,7 @@ export default function OurSolutionItem({
   claim: string;
 }) {
   return (
-    <article className="relative border-[1.9px] border-[#EBEBEB] rounded-[20px] 2xl:rounded-3xl overflow-clip flex flex-row gap-4 max-w-[485px] p-5 xl:p-[22px] 2xl:p-6.5">
+    <article className="relative border-[1.9px] border-[#EBEBEB] hover:bg-gray-50/90 rounded-[20px] 2xl:rounded-3xl overflow-clip flex flex-row gap-4 max-w-[485px] p-5 xl:p-[22px] 2xl:p-6.5 transition-all duration-150">
       <Image
         src={`/${icon}`}
         className="w-12.5 h-12.5 xl:w-11.5 xl:h-11.5 2xl:w-14.5 2xl:h-14.5 object-contain"

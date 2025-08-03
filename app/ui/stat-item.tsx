@@ -34,7 +34,7 @@ export default function StatItem({
           source:
         </span>
         <Link
-          className="text-white text-base 2xl:text-lg font-medium leading-none px-3 py-2 bg-indigo-600 rounded-full"
+          className="text-white text-base 2xl:text-lg font-medium leading-none px-3 py-2 bg-indigo-600 hover:bg-blue-900 transition-all duration-150 rounded-full"
           href={`${source}`}
           target="_blank"
           rel="noopener noreferrer"
