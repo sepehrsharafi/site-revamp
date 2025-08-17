@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50">
       <div className="block xl:hidden w-full p-4 left-0 top-0 absolute justify-between items-center">
@@ -38,32 +44,34 @@ export default function NavBar() {
             </div>
           </div>
           <div className="flex flex-row-reverse justify-start items-center gap-2.5">
-            <svg
-              width="44"
-              height="36"
-              viewBox="0 0 44 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 8H36"
-                stroke="black"
-                strokeWidth="3.25"
-                strokeLinecap="round"
-              />
-              <path
-                d="M8 18H36"
-                stroke="black"
-                strokeWidth="3.25"
-                strokeLinecap="round"
-              />
-              <path
-                d="M8 28H36"
-                stroke="black"
-                strokeWidth="3.25"
-                strokeLinecap="round"
-              />
-            </svg>
+            <button onClick={() => setIsOpen(!isOpen)}>
+              <svg
+                width="44"
+                height="36"
+                viewBox="0 0 44 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 8H36"
+                  stroke="black"
+                  strokeWidth="3.25"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M8 18H36"
+                  stroke="black"
+                  strokeWidth="3.25"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M8 28H36"
+                  stroke="black"
+                  strokeWidth="3.25"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </button>
             <svg
               width="30"
               height="30"
@@ -90,6 +98,55 @@ export default function NavBar() {
             </svg>
           </div>
         </div>
+      </div>
+      <div
+        className={`bg-white/80 backdrop-blur-sm h-screen w-full mx-auto pt-40 fixed left-0 top-0 z-40 transition-all duration-250 ease-in-out transform
+          ${
+            isOpen
+              ? "opacity-100  pointer-events-auto"
+              : "opacity-0  pointer-events-none"
+          }
+        `}
+      >
+        <button
+          className="absolute top-7 right-7 text-black hover:text-indigo-600 transition-colors z-50"
+          onClick={() => setIsOpen(false)}
+          aria-label="Close menu"
+        >
+          <svg
+            width="38"
+            height="38"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="7"
+              y1="7"
+              x2="21"
+              y2="21"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+            <line
+              x1="21"
+              y1="7"
+              x2="7"
+              y2="21"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
+        <ul className="flex flex-col items-center justify-between text-xl font-[550] gap-6">
+          <li className="justify-start text-black">Why Upgrade Your Site</li>
+          <li className="justify-start text-black">Our Services</li>
+          <li className="justify-start text-black">Client Stories</li>
+          <li className="justify-start text-black">Plans</li>
+          <li className="justify-start text-black">Get in Touch</li>
+        </ul>
       </div>
       <div className="absolute my-5 flex-row items-center justify-center auto w-full text-center hidden xl:flex">
         <div className="w-fit flex flex-row pl-7 pr-2.5 py-2.5 2xl:pl-8 2xl:pr-3 2xl:py-3 bg-white rounded-[66px] outline-1 outline-offset-[-1px] outline-neutral-300 justify-center items-center gap-10">

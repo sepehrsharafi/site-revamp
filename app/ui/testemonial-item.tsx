@@ -43,7 +43,7 @@ export default function Testemonial({
   };
 
   return (
-    <article className="w-[440px] p-10 bg-white/40 rounded-3xl outline-[1.50px] outline-offset-[-1.50px] outline-stone-300 backdrop-blur-[108px] flex flex-col justify-center items-center gap-8">
+    <article className="min-w-[440px] p-10 bg-white/40 rounded-3xl outline-[1.50px] outline-offset-[-1.50px] outline-stone-300 backdrop-blur-[108px] flex flex-col justify-center items-center gap-8">
       <span className="font-[syne] w-full text-indigo-950 text-9xl font-medium leading-[90px] h-8">
         “
       </span>

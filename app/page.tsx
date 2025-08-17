@@ -218,7 +218,7 @@ export default function Home() {
             Don’t take our word for it, Ask our clients.
           </span>
         </div>
-        <div>
+        <div className="overflow-auto flex flex-row">
           <Testemonial
             name="Jane Cooper"
             role="Design Lead"
@@ -227,6 +227,16 @@ there is someone making it for
 me to use on my projects.
 Love ya "
             profilePicture="/image.png"
+            rating={4}
+          />
+          <Testemonial
+            name="Jane Cooper"
+            role="Design Lead"
+            testemonial="OHHHH Thanks god !!!! Finally
+there is someone making it for
+me to use on my projects.
+Love ya "
+            profilePicture="/"
             rating={4}
           />
         </div>
